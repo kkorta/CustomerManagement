@@ -1,16 +1,27 @@
 # InternshipApp
 
 1. Open terminal.
-2. Run the following command:.
-`npm install`
-3. Install json-server.
-`npm install -g json-server`
-4.Check if you are connected to the right directory, if not:.
-`cd [directory_name]`.
+2. Run the following command:
+```
+npm install
+```
+3. Install json-server
+```
+npm install -g json-server
+```
+4.Check if you are connected to the right directory, if not:
+```
+cd [directory_name]
+```
 5.
-`json-server --watch db.json`.
+```
+json-server --watch db.json
+```
+
 6.
-`ng serve`.
+```
+ng serve
+```
 
 
 
