@@ -1,0 +1,88 @@
+<mat-card class="customers">
+    <mat-card-header>
+      <mat-card-title>
+        Customers list
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list class="mat-list">
+            <ng-container *ngFor="let customer of data; let i = index">
+              <mat-list-item class="items" >
+                <div class="person-number">{{ i + 1 }}</div>
+                <div class="person-info">
+                    <div class="person-details">
+                        <div class="name">{{ customer.firstname }} {{ customer.lastname }}</div>
+                        <div class="address">{{ customer.address }}</div>
+                        <div class="vatId">Vat ID: {{ customer.vatId }}</div>
+                        <div class="creationDate"> Creation Date: {{customer.creationDate}}</div>
+                    </div>
+                </div>
+                <div class="person-actions">
+                  <button mat-icon-button (click)="startEdit(customer.id)">
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                  <button mat-icon-button (click)="deleteUser(customer.id)">
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </div>
+              </mat-list-item>
+            </ng-container>
+          </mat-list>
+    </mat-card-content>
+    
+
+ 
+  </mat-card>
+
+  <mat-card class="form-container" *ngIf="!currEditing">
+    <form [formGroup]="myForm">
+      <mat-form-field>
+        <mat-label>firstName</mat-label>
+        <input matInput formControlName="firstName">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>lastname</mat-label>
+        <input matInput formControlName="lastName">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>address</mat-label>
+        <input matInput formControlName="address">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Vat ID</mat-label>
+        <input matInput formControlName="vatId">
+      </mat-form-field>
+    </form>
+    <mat-card-actions class="addBtn" >
+      <button mat-raised-button color="primary" (click)="submit()">Add customer</button>
+    </mat-card-actions>
+  </mat-card>
+
+
+  <mat-card class="edit-form-container" *ngIf="currEditing ">
+    <form [formGroup]="editForm">
+      <mat-form-field>
+        <mat-label>firstname</mat-label>
+        <input matInput formControlName="firstName">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>lastname</mat-label>
+        <input matInput formControlName="lastName">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>address</mat-label>
+        <input matInput formControlName="address">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Vat ID</mat-label>
+        <input matInput formControlName="vatId">
+      </mat-form-field>
+    </form>
+    <mat-card-actions class="addBtn" >
+      <button mat-raised-button color="primary" (click)="submitEdit()">Edit</button>
+    </mat-card-actions>
+    <mat-card-actions class="addBtn" >
+      <button mat-raised-button color="primary" (click)="goBack()">Go back</button>
+    </mat-card-actions>
+  </mat-card>
+

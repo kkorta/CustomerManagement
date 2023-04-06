@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Kacper",
+      "lastname": "Nowak",
+      "address": "Jana Matejki 50",
+      "vatId": "PL1234567890",
+      "creationDate": "06.04.2023"
+    },
+    {
+      "id": 2,
+      "firstname": "Jan",
+      "lastname": "Kowalski",
+      "address": "Szczawnica 50",
+      "vatId": "PL1231231231",
+      "creationDate": "06.04.2023"
+    },
+    {
+      "id": 3,
+      "firstname": "Janusz",
+      "lastname": "Nowak",
+      "address": "Biznesowa 54",
+      "vatId": "PL1234567890",
+      "creationDate": "06.04.2023"
+    },
+    {
+      "id": 4,
+      "firstname": "Janusz",
+      "lastname": "Kowalski",
+      "address": "Biznesowa 55",
+      "vatId": "PL1234567890",
+      "creationDate": "06.04.2023"
+    },
+    {
+      "id": 5,
+      "firstname": "Kacper",
+      "lastname": "Test",
+      "address": "Piastowska 1",
+      "vatId": "PL5432167890",
+      "creationDate": "06.04.2023"
+    },
+    {
+      "id": 6,
+      "firstname": "Kacper",
+      "lastname": "Test1",
+      "address": "Nowa 1",
+      "vatId": "PL1234567890",
+      "creationDate": "06.04.2023"
+    },
+    {
+      "id": 7,
+      "firstname": "Kacper ",
+      "lastname": "TEST2",
+      "address": "Pawia 3 ",
+      "vatId": "PL1234567890",
+      "creationDate": "06.04.2023"
+    }
+  ]
+}

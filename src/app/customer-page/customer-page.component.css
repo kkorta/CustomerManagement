@@ -1,0 +1,95 @@
+
+.mat-list {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+  }
+  
+  .mat-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .person-number {
+    font-weight: bold;
+    margin-right: 16px;
+  }
+  
+  .person-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .name {
+    font-weight: bold;
+
+  }
+  
+
+  .mat-icon-button {
+    margin-left: 8px;
+  }
+  
+  .vatId {
+    font-style: italic;
+  }
+
+
+.person-actions {
+    margin-right: 16px;
+  }
+
+  .person-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.addBtn{
+    margin: auto;
+}
+
+mat-card-actions.addBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container{
+  margin: 50px auto;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+mat-form-field{
+  display: flex;
+  flex-direction: row;
+}
+
+.edit-form-container{
+  
+  margin: 50px auto;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+mat-card-header{
+  display: flex;
+  justify-content: center;
+}
+
+.customers{
+  width: fit-content;
+  justify-content: center;
+  margin: auto;
+}
