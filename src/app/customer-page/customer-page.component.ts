@@ -109,13 +109,15 @@ export class CustomerPageComponent implements OnInit {
 
   submitEdit(){
     if (this.editForm.valid) {
-      console.log("edytuj sie")
+      let myDate = new Date();
+      let formattedDate = new DatePipe('en-US').transform(myDate, 'dd.MM.yyyy');
       const updatedCustomer = {
         id: this.editedUserId,
         firstname: this.editForm.get('firstName')!.value,
         lastname: this.editForm.get('lastName')!.value,
         address: this.editForm.get('address')!.value,
-        vatId: this.editForm.get('vatId')!.value
+        vatId: this.editForm.get('vatId')!.value,
+        creationDate: formattedDate
       };
       this.ds.updateUser(this.editedUserId, updatedCustomer).subscribe()
     }
